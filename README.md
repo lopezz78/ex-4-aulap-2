@@ -42,3 +42,48 @@ int main()
         }
     }
  }
+
+ //(DESAFIO) Construir um programa que faz a leitura de duas
+//notas de um aluno, N1 e N2, e os respectivos pesos, P1 e P2. O
+//programa deve calcular a média ponderada alcançada por aluno
+//e apresentar:
+//• A mensagem "Aprovado", se a média alcançada for maior ou
+//igual a sete;
+//• A mensagem "Reprovado", se a média for menor do que
+//sete;
+//• A mensagem "Aprovado com Distinção", se a média for igual
+//a dez.
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main()
+
+ {
+    float N1, N2, P1, P2, mf;
+
+    printf("\n\tNota 1: ");
+    scanf("%f", &N1);
+
+    printf("\n\tNota 2: ");
+    scanf("%f", &N2);
+
+    printf("\n\tPeso 1: ");
+    scanf("%f", &P1);
+
+    printf("\n\tPeso 2: ");
+    scanf("%f", &P2);
+
+    mf = (N1*P1) + (N2*P2)/(P1+P2);
+
+
+    if (mf >= 7)
+    {
+        printf("\n\tAprovado! ");
+    }
+    
+    else
+    {
+        if (mf  7)
+    }
+ }
